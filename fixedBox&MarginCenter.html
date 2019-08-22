@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="floatFir">
+
+</div>
+<div class="floatCon">
+    <div class="floatLeft">
+            <div class="centerTest">
+                A
+            </div>
+    </div>
+    <div class="floatRight">
+        <div class="floatContent1">
+
+        </div>
+        <div class="floatContent2">
+
+        </div>
+        <div class="floatContent3">
+
+        </div>
+        <div class="floatContent4">
+
+        </div>
+        <div class="floatContent5">
+
+        </div>
+        <div class="floatContent6">
+
+        </div>
+    </div>
+</div>
+</body>
+<style>
+    html,body{
+        margin:0;
+    }
+    .floatFir{
+        width:100%;
+        height:50px;
+        position:fixed;
+        top:0;
+        z-index:100;
+        background-color:#ffff00;
+    }
+    .floatLeft{
+        width:200px;
+        height:calc(100vh - 50px);
+        position:fixed;
+        top:50px;
+        background-color:#ff00ff;
+    }
+    .centerTest{
+        margin:auto;
+        position:absolute;
+        background-color:#fff;
+        width:100px;
+        height:100px;
+        top: 0; left: 0; bottom: 0; right: 0;
+    }
+    .floatCon{
+        position:relative;
+        overflow:hidden;
+        top:50px;
+        background-color:#00ffff;
+    }
+    .floatRight{
+        width:calc(100vw - 200px);
+        position:relative;
+        left:200px;
+        top:0;
+        background-color:#9999ff;
+    }
+    .floatContent1{
+        width:200px;
+        height:200px;
+        background-color:#ff0022;
+    }
+    .floatContent2{
+        width:200px;
+        height:200px;
+        background-color:#00ff00;
+    }
+    .floatContent3{
+        width:200px;
+        height:200px;
+        background-color:#990000;
+    }
+    .floatContent4{
+        width:200px;
+        height:200px;
+        background-color:#000022;
+    }
+    .floatContent5{
+        width:200px;
+        height:200px;
+        background-color:#ff0022;
+    }
+    .floatContent6{
+        width:200px;
+        height:200px;
+        background-color:#00ff00;
+    }
+</style>
+</html>

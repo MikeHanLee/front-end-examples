@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<main>
+<div id="div1"></div><div id="div2"></div>
+<div id="div3"></div>
+</main>
+</body>
+<style>
+  html,body{
+    width:100vw;
+    height:100vh;
+  }
+  main{
+    width:80px;
+    height:74px;
+    margin-left:calc(50vw - 40px);
+    margin-top: calc(50vh - 37px);
+    animation:myLove 1s infinite;
+  }
+  #div1{
+    width:40px;
+    height:24px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 2px;
+    display:inline-block;
+    background-color: #ff0022;
+    animation:myLoveTopLeft 1s infinite;
+  }
+  #div2{
+    width:40px;
+    height:24px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 2px;
+    background-color: #ff0022;
+    display:inline-block;
+    animation:myLoveTopRight 1s infinite;
+  }
+  #div3{
+    width:0px;
+    height:0px;
+    border-top:50px solid #ff0022;
+    border-left:40px solid transparent;
+    border-right:40px solid transparent;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    margin-top:-4px;
+    animation:myLoveBottom 1s infinite;
+  }
+  @keyframes myLove {
+    0%{
+      width:80px;
+      height:74px;
+      margin-left:calc(50vw - 40px);
+      margin-top: calc(50vh - 37px);
+    }
+    50%{
+      width:400px;
+      height:370px;
+      margin-left:calc(50vw - 200px);
+      margin-top: calc(50vh - 185px);
+    }
+    100%{
+      width:80px;
+      height:74px;
+      margin-left:calc(50vw - 40px);
+      margin-top: calc(50vh - 37px);
+    }
+  }
+  @keyframes myLoveTopRight {
+    0%{
+      width:40px;
+      height:24px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 2px;
+    }
+    50%{
+      width:200px;
+      height:120px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 10px;
+    }
+    100%{
+      width:40px;
+      height:24px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 2px;
+    }
+  }
+  @keyframes myLoveTopLeft {
+    0%{
+      width:40px;
+      height:24px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 2px;
+    }
+    50%{
+      width:200px;
+      height:120px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 10px;
+    }
+    100%{
+      width:40px;
+      height:24px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 2px;
+    }
+  }
+  @keyframes myLoveBottom {
+    100%{
+      width:0px;
+      height:0px;
+      border-top:50px solid #ff0022;
+      border-left:40px solid transparent;
+      border-right:40px solid transparent;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      margin-top:-4px;
+    }
+    50%{
+      width:0px;
+      height:0px;
+      border-top:250px solid #ff0022;
+      border-left:200px solid transparent;
+      border-right:200px solid transparent;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin-top:-10px;
+    }
+    100%{
+      width:0px;
+      height:0px;
+      border-top:50px solid #ff0022;
+      border-left:40px solid transparent;
+      border-right:40px solid transparent;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      margin-top:-4px;
+    }
+  }
+</style>
+</html>
